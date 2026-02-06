@@ -17,6 +17,7 @@ This project focuses on identifying patterns in customer attrition and building 
 ## 🛠️ Tech Stack
 - Python, Pandas, Scikit-Learn, Seaborn, Matplotlib.
 ## 📊 Data Insights & Visualizations
+<img width="554" height="463" alt="image" src="https://github.com/user-attachments/assets/3306eb41-f966-47a9-abd5-9769cf5d0e6e" />
 <img width="395" height="414" alt="image" src="https://github.com/user-attachments/assets/c7911b1b-7aba-479a-952b-1d19511b6768" />
 <img width="852" height="538" alt="image" src="https://github.com/user-attachments/assets/b42a92dd-db3a-4a26-a2be-6d138c8d97b0" />
 <img width="454" height="452" alt="image" src="https://github.com/user-attachments/assets/51711e7f-e634-4059-915a-ccf2c114c302" />
