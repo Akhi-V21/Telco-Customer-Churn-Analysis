@@ -19,7 +19,16 @@ This project focuses on identifying patterns in customer attrition and building 
 ## 📊 Data Insights & Visualizations
 <img width="554" height="463" alt="image" src="https://github.com/user-attachments/assets/3306eb41-f966-47a9-abd5-9769cf5d0e6e" />
 
-Visual 1: The Problem at a Glance This chart shows how many customers stayed (No) vs. how many left (Yes). We see that about 26% of our customers are leaving. This is the problem my project aims to solve by predicting who will leave next
+,Predicted: No Churn,Predicted: Churn
+Actual: No Churn,934 (True Negatives),102 (False Positives)
+Actual: Churn,149 (False Negatives),224 (True Positives)
+
+Key Takeaways:
+Overall Accuracy: ~82%
+
+True Negatives: The model is highly effective at identifying customers who will stay.
+
+Recall Challenge: There were 149 False Negatives, meaning some customers who actually churned were not flagged by the model.
 
 <img width="395" height="414" alt="image" src="https://github.com/user-attachments/assets/c7911b1b-7aba-479a-952b-1d19511b6768" />
 
