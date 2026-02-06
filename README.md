@@ -4,7 +4,8 @@ Exploring customer behavior and predicting churn using Logistic Regression and a
 
 ### 1. Customer Churn Distribution
 This chart shows the percentage of customers who left the service versus those who stayed.
-![Churn Distribution](images/churn_pie_chart.png)
+<img width="866" height="476" alt="image" src="https://github.com/user-attachments/assets/62f390b2-3e90-4142-9898-a44b0abb3d55" />
+
 
 ### 2. Impact of Contract Type
 Month-to-month contracts are the biggest driver of churn.
