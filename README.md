@@ -1,5 +1,15 @@
-# Telco-Customer-Churn-Analysis
-Exploring customer behavior and predicting churn using Logistic Regression and advanced data visualization.
+# Telco Customer Churn Analysis & Prediction
+
+## Project Overview
+This project predicts customer churn using the Telco dataset. I performed data cleaning, exploratory analysis (EDA), and built a Logistic Regression model.
+
+## Key Insights
+* **Contract Risk:** Month-to-month contracts have the highest churn rate.
+* **Accuracy:** The prediction model achieved **82% accuracy**.
+* **Tenure:** Most churn happens in the first 12 months.
+
+## Visualizations
+(You can upload your screenshots here later!)
 ## 📊 Data Insights & Visualizations
 <img width="395" height="414" alt="image" src="https://github.com/user-attachments/assets/c7911b1b-7aba-479a-952b-1d19511b6768" />
 <img width="852" height="538" alt="image" src="https://github.com/user-attachments/assets/b42a92dd-db3a-4a26-a2be-6d138c8d97b0" />
