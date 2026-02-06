@@ -1,15 +1,21 @@
 # Telco Customer Churn Analysis & Prediction
 
-## Project Overview
-This project predicts customer churn using the Telco dataset. I performed data cleaning, exploratory analysis (EDA), and built a Logistic Regression model.
+## 📌 Project Overview
+This project focuses on identifying patterns in customer attrition and building a predictive model to help a telecommunications company reduce churn.
 
-## Key Insights
-* **Contract Risk:** Month-to-month contracts have the highest churn rate.
-* **Accuracy:** The prediction model achieved **82% accuracy**.
-* **Tenure:** Most churn happens in the first 12 months.
+## 📁 Repository Structure
+- **Task_1_.ipynb**: Data Cleaning (handling missing values, encoding).
+- **Task_2.ipynb**: Exploratory Data Analysis (EDA) & Demographic trends.
+- **Task_4.ipynb**: Machine Learning (Logistic Regression model - 82% Accuracy).
+- **Task_6.ipynb**: Advanced Visualizations (Box plots, Violin plots).
 
-## Visualizations
-(You can upload your screenshots here later!)
+## 📊 Key Findings
+- **Contract Risk:** Month-to-month contracts are the biggest driver of churn.
+- **Price Sensitivity:** High monthly charges correlate with higher churn.
+- **Model Performance:** The Logistic Regression model provides a reliable prediction for at-risk customers.
+
+## 🛠️ Tech Stack
+- Python, Pandas, Scikit-Learn, Seaborn, Matplotlib.
 ## 📊 Data Insights & Visualizations
 <img width="395" height="414" alt="image" src="https://github.com/user-attachments/assets/c7911b1b-7aba-479a-952b-1d19511b6768" />
 <img width="852" height="538" alt="image" src="https://github.com/user-attachments/assets/b42a92dd-db3a-4a26-a2be-6d138c8d97b0" />
