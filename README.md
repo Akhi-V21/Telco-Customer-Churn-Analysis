@@ -1,57 +1,81 @@
-# Telco Customer Churn Analysis & Prediction
+# Customer Churn Analysis and Prediction
+### Internship Project - SaiKet Systems Developed by: Akhila Vaidya
 
-## 📌 Project Overview
-This project focuses on identifying patterns in customer attrition and building a predictive model to help a telecommunications company reduce churn.
+## 1. Problem Statement
+The goal of this project is to analyze the Telco Customer Churn dataset to identify why customers are leaving and to build a predictive model that can flag "at-risk" customers. By understanding these patterns, the business can take proactive steps to improve customer retention.
 
-## 📁 Repository Structure
-- **Task_1_.ipynb**: Data Cleaning (handling missing values, encoding).
-- **Task_2.ipynb**: Exploratory Data Analysis (EDA) & Demographic trends.
-- **Task_4.ipynb**: Machine Learning (Logistic Regression model - 82% Accuracy).
-- **Task_6.ipynb**: Advanced Visualizations (Box plots, Violin plots).
+## 2. Business Problem Overview
+In the telecommunications industry, the cost of acquiring a new customer is significantly higher than retaining an existing one. High churn rates directly impact profitability. This project provides data-driven insights to help the business understand customer behavior and reduce turnover.
 
-## 📊 Key Findings
-- **Contract Risk:** Month-to-month contracts are the biggest driver of churn.
-- **Price Sensitivity:** High monthly charges correlate with higher churn.
-- **Model Performance:** The Logistic Regression model provides a reliable prediction for at-risk customers.
+## 3. Understanding and Defining Churn
+Churn is defined as the loss of clients or customers. In this dataset, churn is a binary variable:
 
-## 🛠️ Tech Stack
-- Python, Pandas, Scikit-Learn, Seaborn, Matplotlib.
-## 📊 Data Insights & Visualizations
-<img width="554" height="463" alt="image" src="https://github.com/user-attachments/assets/3306eb41-f966-47a9-abd5-9769cf5d0e6e" />
+Yes: The customer left the company within the last month.
 
-,Predicted: No Churn,Predicted: Churn
-Actual: No Churn,934 (True Negatives),102 (False Positives)
-Actual: Churn,149 (False Negatives),224 (True Positives)
+No: The customer remained with the company.
 
-Key Takeaways:
-Overall Accuracy: ~82%
+## 4. High-Value Churn
+A key focus of this analysis is identifying "High-Value" customers—those with high Monthly Charges and long Tenure—who are at risk of churning. Losing these customers has the most significant financial impact on the company.
 
-True Negatives: The model is highly effective at identifying customers who will stay.
+## 5. Understanding the Business Objective and the Data
+The primary objectives are:
 
-Recall Challenge: There were 149 False Negatives, meaning some customers who actually churned were not flagged by the model.
+Identify key demographic and service-related factors leading to churn.
 
-<img width="395" height="414" alt="image" src="https://github.com/user-attachments/assets/c7911b1b-7aba-479a-952b-1d19511b6768" />
+Clean and preprocess raw data for machine learning.
 
-Visual 2: The Main Driver of Churn This is my biggest finding: Customers on Month-to-month contracts are the most likely to leave.
-Insight: Long-term contracts (1 or 2 years) act as a "lock," keeping customers loyal. Short-term plans are the highest risk for the company.
+Build a model to predict the probability of a customer leaving.
 
-<img width="852" height="538" alt="image" src="https://github.com/user-attachments/assets/b42a92dd-db3a-4a26-a2be-6d138c8d97b0" />
+Propose actionable retention strategies.
 
-Visual 3: The Price Factor Here, we see that customers who leave generally pay higher monthly bills than those who stay.
-Insight: High costs are driving people away. To keep customers, the company might need to offer loyalty discounts to high-paying users.
+## 6. Understanding Customer Behaviour During Churn
+Through Exploratory Data Analysis (EDA), we observed several patterns:
 
-<img width="454" height="452" alt="image" src="https://github.com/user-attachments/assets/51711e7f-e634-4059-915a-ccf2c114c302" />
+Contract Type: Customers on Month-to-month contracts churn at a much higher rate than those on one or two-year contracts.
 
-Visual 4: The AI Solution This is a "Confusion Matrix" which proves my Machine Learning model is working.
-Result: The model is 82% accurate. This means the company can now use this tool to automatically flag "at-risk" customers and offer them a promotion before they officially quit
+Payment Method: Electronic check users show a higher tendency to churn.
 
-## 📈 Summary Report
-My analysis found that **expensive, short-term contracts** are the biggest reason for losing customers. 
+Services: Customers without tech support or online security are more likely to leave.
 
-By using the **Predictive Model** I developed:
-1. The company can predict with **82% certainty** who will leave.
-2. We can target high-paying, month-to-month customers with better loyalty offers.
-3. This shifts the business from "reacting" to lost customers to "preventing" the loss before it happens.
+## 7. Dataset and Data Dictionary
+The project uses the Telco_Customer_Churn_Dataset.csv. Key features include:
+
+CustomerID: Unique ID for each customer.
+
+Tenure: Number of months the customer has stayed with the company.
+
+MonthlyCharges: The amount charged to the customer monthly.
+
+TotalCharges: The total amount charged to the customer.
+
+Churn: Whether the customer churned or not (Target Variable).
+
+## 8. Data Preparation
+To prepare the data for modeling, the following steps were taken:
+
+Handling Missing Values: Converted TotalCharges to numeric and filled null values.
+
+Encoding: Converted categorical variables (like Gender and Contract) into numerical format using One-Hot Encoding and Label Encoding.
+
+Feature Scaling: Ensured numerical features were on a similar scale for better model performance.
+
+## 9. Modelling
+I developed a Logistic Regression model to predict churn.
+
+Algorithm: Logistic Regression (chosen for its efficiency in binary classification).
+
+Training: The data was split into 80% training and 20% testing sets.
+
+Performance: The model achieved a baseline accuracy score (e.g., ~80%), allowing the business to identify potential churners effectively.
+
+## 10. Conclusion and Strategies
+Based on the model and analysis, the following strategies are proposed:
+
+Encourage Month-to-month customers to switch to one-year contracts through discounts.
+
+Target "High-Value" customers with loyalty rewards.
+
+Improve Tech Support and Online Security offerings to increase customer stickiness.
 
 
 
