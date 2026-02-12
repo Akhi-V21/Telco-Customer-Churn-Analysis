@@ -40,8 +40,7 @@ Based on the Exploratory Data Analysis (EDA) in my notebooks:
 ## 7. Dataset and Data Dictionary
 The dataset contains 7,043 rows and 21 columns.
 
-You can download dataset Action,Markdown Code
-Download CSV,[![Download CSV](https://img.shields.io/badge/Download-Dataset-blue)](https://raw.githubusercontent.com/Akhi-V21/Telco-Customer-Churn-Analysis/refs/heads/main/Telco_Customer_Churn_Dataset%20.csv)
+[![Download Dataset](https://img.shields.io/badge/Download-Dataset-blue?style=for-the-badge&logo=microsoft-excel)](https://raw.githubusercontent.com/Akhi-V21/Telco-Customer-Churn-Analysis/refs/heads/main/Telco_Customer_Churn_Dataset%20.csv)
 
 Key features include:
 
