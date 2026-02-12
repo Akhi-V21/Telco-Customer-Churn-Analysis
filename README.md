@@ -1,81 +1,52 @@
 # Customer Churn Analysis and Prediction
-### Internship Project - SaiKet Systems Developed by: Akhila Vaidya
+### Internship Project - SaiKet Systems Developed by: Akhila Vaidya1.
+## Problem Statement:
+The goal of this project is to analyze the Telco Customer Churn dataset to identify why customers are leaving and to build a predictive model. The focus is on identifying patterns in customer behavior that lead to service termination.
 
-## 1. Problem Statement
-The goal of this project is to analyze the Telco Customer Churn dataset to identify why customers are leaving and to build a predictive model that can flag "at-risk" customers. By understanding these patterns, the business can take proactive steps to improve customer retention.
-
-## 2. Business Problem Overview
-In the telecommunications industry, the cost of acquiring a new customer is significantly higher than retaining an existing one. High churn rates directly impact profitability. This project provides data-driven insights to help the business understand customer behavior and reduce turnover.
+## 2. Business Problem Overview:
+In the telecom industry, retaining a customer is cheaper than acquiring a new one. This project addresses the business need to reduce "Churn" (loss of customers) by providing data-driven insights and a predictive tool for the retention team.
 
 ## 3. Understanding and Defining Churn
-Churn is defined as the loss of clients or customers. In this dataset, churn is a binary variable:
-
-Yes: The customer left the company within the last month.
-
-No: The customer remained with the company.
+In this project, Churn is defined based on the service model:
+Contract-Based Churn: Customers on one or two-year contracts who choose not to renew.
+Month-to-Month Churn: Customers who pay monthly and can stop the service at any time.
+This is the most volatile segment and requires the most attention.
 
 ## 4. High-Value Churn
-A key focus of this analysis is identifying "High-Value" customers—those with high Monthly Charges and long Tenure—who are at risk of churning. Losing these customers has the most significant financial impact on the company.
+Following the SaiKet Systems objective, this project prioritizes "High-Value" customers. We define these as customers with high Monthly Charges and significant Tenure. Losing these customers represents a major revenue loss, so the model specifically looks for risks in this group.
 
-## 5. Understanding the Business Objective and the Data
-The primary objectives are:
-
-Identify key demographic and service-related factors leading to churn.
-
-Clean and preprocess raw data for machine learning.
-
-Build a model to predict the probability of a customer leaving.
-
-Propose actionable retention strategies.
+## 5. Understanding the Business Objective and the Data:
+The objective is to move from raw data to actionable strategy:Clean the data to ensure accuracy.
+Analyze which services (Internet, Tech Support, etc.) correlate with loyalty.
+Predict future churn using Machine Learning.
 
 ## 6. Understanding Customer Behaviour During Churn
-Through Exploratory Data Analysis (EDA), we observed several patterns:
-
-Contract Type: Customers on Month-to-month contracts churn at a much higher rate than those on one or two-year contracts.
-
-Payment Method: Electronic check users show a higher tendency to churn.
-
-Services: Customers without tech support or online security are more likely to leave.
+Based on the Exploratory Data Analysis (EDA) in my notebooks:
+Fiber Optic users show a higher churn rate compared to DSL users.
+Newer customers (low tenure) are at a higher risk of leaving than long-term customers.
+Lack of Online Security/Tech Support is a leading indicator that a customer might churn.
 
 ## 7. Dataset and Data Dictionary
-The project uses the Telco_Customer_Churn_Dataset.csv. Key features include:
+The dataset contains 7,043 rows and 21 columns.
+Key features include:
+Tenure: Number of months the customer stayed.
+MonthlyCharges: The amount charged each month.
+Contract: The contract term (Month-to-month, One year, Two year).
+Churn: Whether the customer left or not (Target).
 
-CustomerID: Unique ID for each customer.
+## 8. Data PreparationI performed the following steps to prepare the data:
+Handling Nulls: Converted TotalCharges to numeric and handled missing values.
+Encoding: Used get_dummies to convert categorical text (like "Yes/No") into numbers ($0$ and $1$) that the model can read.
+Feature Selection: Dropped customerID as it has no predictive power.
 
-Tenure: Number of months the customer has stayed with the company.
+## 9. ModellingI built a Logistic Regression model to classify customers:
+Training: 80% of the data was used to teach the model.
+Testing: 20% was used to verify accuracy.
+Result: The model provides a clear "Churn Probability" for every customer.
 
-MonthlyCharges: The amount charged to the customer monthly.
-
-TotalCharges: The total amount charged to the customer.
-
-Churn: Whether the customer churned or not (Target Variable).
-
-## 8. Data Preparation
-To prepare the data for modeling, the following steps were taken:
-
-Handling Missing Values: Converted TotalCharges to numeric and filled null values.
-
-Encoding: Converted categorical variables (like Gender and Contract) into numerical format using One-Hot Encoding and Label Encoding.
-
-Feature Scaling: Ensured numerical features were on a similar scale for better model performance.
-
-## 9. Modelling
-I developed a Logistic Regression model to predict churn.
-
-Algorithm: Logistic Regression (chosen for its efficiency in binary classification).
-
-Training: The data was split into 80% training and 20% testing sets.
-
-Performance: The model achieved a baseline accuracy score (e.g., ~80%), allowing the business to identify potential churners effectively.
-
-## 10. Conclusion and Strategies
-Based on the model and analysis, the following strategies are proposed:
-
-Encourage Month-to-month customers to switch to one-year contracts through discounts.
-
-Target "High-Value" customers with loyalty rewards.
-
-Improve Tech Support and Online Security offerings to increase customer stickiness.
-
-
+## 10. Data-Driven Retention Strategies :
+Based on my findings, I recommend:
+Convert to Contracts: Offer small discounts to move Month-to-Month users to 1-year plans.
+Tech Support Bundles: Provide free or discounted Tech Support to Fiber Optic users to increase "stickiness.
+"Loyalty Programs: Target high-tenure, high-value customers with proactive rewards before they reach their "churn window."
 
