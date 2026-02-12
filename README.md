@@ -8,16 +8,22 @@ In the telecom industry, retaining a customer is cheaper than acquiring a new on
 
 ## 3. Understanding and Defining Churn
 In this project, Churn is defined based on the service model:
+
 Contract-Based Churn: Customers on one or two-year contracts who choose not to renew.
+
 Month-to-Month Churn: Customers who pay monthly and can stop the service at any time.
+
 This is the most volatile segment and requires the most attention.
 
 ## 4. High-Value Churn
-Following the SaiKet Systems objective, this project prioritizes "High-Value" customers. We define these as customers with high Monthly Charges and significant Tenure. Losing these customers represents a major revenue loss, so the model specifically looks for risks in this group.
+Following the SaiKet Systems objective, this project prioritizes "High-Value" customers.
+We define these as customers with high Monthly Charges and significant Tenure. Losing these customers represents a major revenue loss, so the model specifically looks for risks in this group.
 
 ## 5. Understanding the Business Objective and the Data:
 The objective is to move from raw data to actionable strategy:Clean the data to ensure accuracy.
+
 Analyze which services (Internet, Tech Support, etc.) correlate with loyalty.
+
 Predict future churn using Machine Learning.
 
 ## 6. Understanding Customer Behaviour During Churn
